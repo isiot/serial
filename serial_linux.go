@@ -8,7 +8,7 @@ import (
 	"time"
 	"unsafe"
 
-	"golang.org/x/sys/unix"
+	"github.com/golang/sys/unix"
 )
 
 func openPort(name string, baud int, databits byte, parity Parity, stopbits StopBits, readTimeout time.Duration) (p *Port, err error) {
